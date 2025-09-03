@@ -50,3 +50,10 @@ Settings → Pages → Source: GitHub Actions (workflow auto-deploys).
 - **Missing images:** Ensure `thumbnail.png` exists next to each project’s `index.qmd`.
 - **Homepage order wrong:** All featured projects must have unique integer `priority`.
 - **Quarto not found in CI:** Check `quarto-dev/quarto-actions/setup@v2` and runner logs.
+
+git init
+git add .
+git commit -m "Initial portfolio"
+git remote add origin https://github.com/jjmiddagh/portfolio.git
+git branch -M main
+git push -u origin main
