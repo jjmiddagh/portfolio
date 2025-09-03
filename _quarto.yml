@@ -13,7 +13,7 @@ website:
       - href: about.qmd
         text: About
       - href: files/Joshua_Middagh_Resume.pdf
-        text: Résumé
+        text: Resume
   page-footer:
     center: "© 2025 Joshua J. Middagh"
   favicon: assets/images/favicon.png
