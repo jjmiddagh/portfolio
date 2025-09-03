@@ -1,63 +1,45 @@
 param(
-    [Parameter(Mandatory)]
-    [string]$Slug,
-    [Parameter(Mandatory)]
-    [string]$Title,
-    [Parameter(Mandatory)]
-    [string]$Description,
-    [Parameter(Mandatory)]
-    [string]$Date,
-    [Parameter(Mandatory)]
-    [string]$Categories,
-    [Parameter(Mandatory)]
-    [bool]$Featured,
-    [Parameter(Mandatory)]
-    [int]$Priority,
-    [Parameter(Mandatory)]
-    [string]$RepoUrl,
-    [Parameter(Mandatory)]
-    [string]$DemoUrl
+    [Parameter(Mandatory = $true)][string]$Slug,                 # e.g. "project-d"
+    [Parameter(Mandatory = $true)][string]$Title,                # e.g. "Fraud Model Risk Dashboard"
+    [Parameter(Mandatory = $true)][string]$Description,          # one-liner
+    [string]$Date = (Get-Date -Format "yyyy-MM-dd"),
+    [string]$Categories = "ML, Portfolio",
+    [bool]$Featured = $true,
+    [int]$Priority = 10,
+    [string]$RepoUrl = "https://github.com/you/repo",
+    [string]$DemoUrl = "https://your-demo.app"
 )
 
-$ErrorActionPreference = "Stop"
-$root = Split-Path -Parent $MyInvocation.MyCommand.Definition
-
+# Validate slug
 if ($Slug -notmatch '^[a-z0-9]+(-[a-z0-9]+)*$') {
-    Write-Error "Slug must be kebab-case (lowercase, hyphens)."
-}
-if ($Date -notmatch '^\d{4}-\d{2}-\d{2}$') {
-    Write-Error "Date must be ISO format YYYY-MM-DD."
-}
-if ($Priority -notmatch '^\d+$') {
-    Write-Error "Priority must be an integer."
+    throw "Slug must be kebab-case (e.g., project-d)."
 }
 
-$projDir = "$root/projects/$Slug"
-if (!(Test-Path $projDir)) { New-Item -ItemType Directory -Path $projDir | Out-Null }
+$projRoot = Join-Path "projects" $Slug
+New-Item -ItemType Directory -Path $projRoot -Force | Out-Null
 
-$imgPath = "$projDir/thumbnail.png"
-if (!(Test-Path $imgPath)) {
-    Add-Type -AssemblyName System.Drawing
-    $bmp = New-Object System.Drawing.Bitmap 64,64
-    $g = [System.Drawing.Graphics]::FromImage($bmp)
-    $g.Clear([System.Drawing.Color]::LightGray)
-    $bmp.Save($imgPath, [System.Drawing.Imaging.ImageFormat]::Png)
-    $g.Dispose()
-    $bmp.Dispose()
+# Create thumbnail placeholder if not present
+$thumb = Join-Path $projRoot "thumbnail.png"
+if (-not (Test-Path $thumb)) {
+    # 1x1 transparent pixel
+    [byte[]]$png = [Convert]::FromBase64String(
+        "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4////fwAJ+wP9zS6ZbQAAAABJRU5ErkJggg=="
+    )
+    [IO.File]::WriteAllBytes($thumb, $png)
 }
 
-$indexPath = "$projDir/index.qmd"
-$content = @"
+# Write index.qmd
+$index = @"
 ---
-title: \"$Title\"
-description: \"$Description\"
+title: "$Title"
+description: "$Description"
 date: $Date
 categories: [$Categories]
 image: thumbnail.png
 featured: $Featured
 priority: $Priority
-repo_url: \"$RepoUrl\"
-demo_url: \"$DemoUrl\"
+repo_url: "$RepoUrl"
+demo_url: "$DemoUrl"
 ---
 
 ## Problem
@@ -72,4 +54,7 @@ Key outcomes, metrics, or visuals.
 **Code:** [GitHub]({{< meta repo_url >}})
 **Live Demo:** [Open]({{< meta demo_url >}})
 "@
-$content | Set-Content -Path $indexPath -Encoding UTF8
+
+$index | Set-Content (Join-Path $projRoot "index.qmd") -Encoding UTF8
+Write-Host "✅ Created $projRoot"
+Write-Host "→ Add screenshots, update copy, commit & push. Quarto listings will auto-update."
