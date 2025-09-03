@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Portfolio"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: about.qmd
+        text: About
+      - href: files/Joshua_Middagh_Resume.pdf
+        text: Résumé
+  page-footer:
+    center: "© 2025 Joshua J. Middagh"
+  favicon: assets/images/favicon.png
+
+format:
+  html:
+    theme: flatly
+    toc: false
+    smooth-scroll: true

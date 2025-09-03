@@ -1,0 +1,38 @@
+{
+  "about.qmd": {
+    "about.html": "ad7548da"
+  },
+  "index.qmd": {
+    "index.html": "efd398ac"
+  },
+  "projects/project-a/index.qmd": {
+    "index.html": "0d9abd69"
+  },
+  "projects/project-b/index.qmd": {
+    "index.html": "474db331"
+  },
+  "projects/project-c/index.qmd": {
+    "index.html": "b65c3681"
+  },
+  "projects.qmd": {
+    "projects.html": "0f81a912"
+  },
+  "tools/about.qmd": {
+    "about.html": "c8795e4f"
+  },
+  "tools/index.qmd": {
+    "index.html": "f6e1417b"
+  },
+  "tools/projects/project-a/index.qmd": {
+    "index.html": "0866120b"
+  },
+  "tools/projects/project-b/index.qmd": {
+    "index.html": "e1cca5ca"
+  },
+  "tools/projects/project-c/index.qmd": {
+    "index.html": "556174af"
+  },
+  "tools/projects.qmd": {
+    "projects.html": "89474253"
+  }
+}

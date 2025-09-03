@@ -1,0 +1,23 @@
+﻿---
+title: "Airbnb Dynamic Pricing"
+description: "Flagstaff-focused dynamic pricing engine using market data."
+date: 2025-09-01
+categories: [ML, Portfolio]
+image: thumbnail.png
+featured: true
+priority: 3
+repo_url: "https://github.com/your/repo"
+demo_url: "https://your-demo.app"
+---
+
+## Problem
+Short description of the business or technical challenge.
+
+## Approach
+Summary of methods, tools, and design choices.
+
+## Results
+Key outcomes, metrics, or visuals.
+
+**Code:** [GitHub]({< meta repo_url >})  
+**Live Demo:** [Open]({< meta demo_url >})

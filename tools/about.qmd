@@ -1,0 +1,7 @@
+﻿---
+title: \"About Me\"
+---
+
+# About Me
+Hi, I'm Josh â€” an AI Solutions Architect and Data Science Executive.
+This portfolio showcases selected projects, case studies, and experiments.

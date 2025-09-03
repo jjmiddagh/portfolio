@@ -1,0 +1,13 @@
+﻿---
+title: \"AI Solutions Architect & Data Science Leader\"
+listing:
+  contents: projects
+  sort: \"priority\"
+  fields: [title, image, description, categories]
+  type: grid
+  image-placeholder: true
+  filter:
+    - featured: true
+---
+
+Welcome! I build practical AI systems and model-risk programs. Below are a few highlights.

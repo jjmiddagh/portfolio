@@ -1,0 +1,8 @@
+﻿---
+title: \"Projects\"
+listing:
+  contents: projects
+  sort: [\"-date\", \"priority\"]
+  type: table
+  fields: [title, description, date, categories]
+---

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Oswald:700|Roboto:400,700&display=swap');
+/* Background and text */
+body {
+  background: #121212 !important;
+  color: #e0e0e0 !important;
+  font-family: 'Roboto', 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #00bfff;
+  font-family: 'Montserrat', 'Oswald', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: none;
+}
+
+/* Navbar */
+.navbar {
+  background: #181818 !important;
+  border-bottom: 2px solid #00bfff;
+  color: #e0e0e0 !important;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+  color: #00bfff !important;
+  font-weight: 600;
+}
+
+.navbar-nav > li > a:hover, .navbar-brand:hover {
+  color: #fff !important;
+}
+
+/* Buttons */
+.btn, .btn-primary, .btn-secondary {
+  background: #00bfff;
+  color: #181818 !important;
+  border: none;
+  font-weight: bold;
+  box-shadow: none;
+}
+
+/* Project grid cards */
+.quarto-grid-item {
+  background: #181818 !important;
+  border: 1px solid #222;
+  box-shadow: 0 2px 8px #000a;
+  border-radius: 8px;
+}
+
+.quarto-grid-item .listing-title {
+  color: #00bfff !important;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Links */
+a {
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  background: #181818 !important;
+  border-top: 2px solid #00bfff;
+  color: #e0e0e0 !important;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+/* Add a subtle neon glow to images */
+img {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px #000a;
+}
