@@ -1,12 +1,11 @@
-﻿# .github/workflows/quarto-publish.yml
-name: Publish Quarto site
+﻿name: Quarto Build & Deploy (GitHub Pages, no third‑party actions)
 
 on:
   push:
-    branches: [main]
+    branches: ["main"]
   workflow_dispatch:
 
-# REQUIRED for Pages + OIDC:
+# Required for GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -20,23 +19,40 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: quarto-dev/quarto-actions/setup@v2
-      - name: Render site
-        run: quarto render
-      - name: Setup Pages
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+
+      - name: Install Quarto
+        run: |
+          curl -L -o quarto.deb https://quarto.org/download/latest/quarto-linux-amd64.deb
+          sudo dpkg -i quarto.deb || sudo apt-get -f install -y
+          quarto --version
+
+      # Optional: install LaTeX packages for PDF rendering
+      # - name: Install TinyTeX (optional for PDF)
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended
+
+      - name: Render Quarto site
+        run: |
+          quarto check || true
+          quarto render
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
