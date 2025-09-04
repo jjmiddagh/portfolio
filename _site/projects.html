@@ -72,6 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="assets/styles/corporate.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -107,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./files/Joshua_Middagh_Resume.pdf"> 
-<span class="menu-text">Résumé</span></a>
+<span class="menu-text">Resume</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -122,29 +123,42 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Projects</h1>
+
+
+
+<section id="projects" class="level1">
+<h1>Projects</h1>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<ul>
+<li><h3 id="telecom-churn-prediction" class="anchored" data-anchor-id="projects">Telecom Churn Prediction</h3>
+<ul>
+<li>XGBoost, SMOTE, Streamlit<br>
+</li>
+<li><a href="https://github.com/jjmiddagh/telecom-churn">Repo</a> · <a href=".\projects/churn.html">Demo</a></li>
+</ul></li>
+<li><h3 id="ai-bias-auditing-for-hr" class="anchored">AI Bias Auditing for HR</h3>
+<ul>
+<li>Fairness metrics, drift monitoring<br>
+</li>
+<li><a href=".\projects/hr-bias.html">Case Study</a></li>
+</ul></li>
+<li><h3 id="airbnb-dynamic-pricing-flagstaff" class="anchored">Airbnb Dynamic Pricing (Flagstaff)</h3>
+<ul>
+<li>Price elasticity, scraping pipeline<br>
+</li>
+<li><a href=".\projects/airbnb-pricing.html">Overview</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
 </div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -220,7 +234,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/jjmiddagh\.github\.io\/portfolio\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

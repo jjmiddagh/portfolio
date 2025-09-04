@@ -1,8 +1,16 @@
-﻿---
-title: "Projects"
-listing:
-  contents: projects
-  sort: ["-date", "priority"]
-  type: table
-  fields: [title, description, date, categories]
----
+﻿# Projects
+
+::: {layout-ncol=3}
+- ### Telecom Churn Prediction  
+  - XGBoost, SMOTE, Streamlit  
+  - [Repo](https://github.com/jjmiddagh/telecom-churn) · [Demo](/projects/churn.html)
+
+- ### AI Bias Auditing for HR  
+  - Fairness metrics, drift monitoring  
+  - [Case Study](/projects/hr-bias.html)
+
+- ### Airbnb Dynamic Pricing (Flagstaff)
+  - Price elasticity, scraping pipeline  
+  - [Overview](/projects/airbnb-pricing.html)
+:::
+

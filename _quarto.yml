@@ -1,9 +1,13 @@
 project:
   type: website
   output-dir: _site
+metadata:
+  lang: en
+  encoding: utf-8
 
 website:
   title: "Portfolio"
+  site-url: "https://jjmiddagh.github.io/portfolio/"
   navbar:
     right:
       - href: index.qmd
@@ -23,3 +27,6 @@ format:
     theme: flatly
     toc: false
     smooth-scroll: true
+    css: assets/styles/corporate.css
+
+

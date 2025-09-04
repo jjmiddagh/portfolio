@@ -35,6 +35,13 @@
     "text": "Welcome! I build practical AI systems and model-risk programs. Below are a few highlights."
   },
   {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Projects\n\n\n\n\nTelecom Churn Prediction\n\nXGBoost, SMOTE, Streamlit\n\nRepo · Demo\n\nAI Bias Auditing for HR\n\nFairness metrics, drift monitoring\n\nCase Study\n\nAirbnb Dynamic Pricing (Flagstaff)\n\nPrice elasticity, scraping pipeline\n\nOverview"
+  },
+  {
     "objectID": "projects/project-b/index.html",
     "href": "projects/project-b/index.html",
     "title": "AI Bias Auditing",
@@ -67,7 +74,7 @@
     "href": "index.html",
     "title": "\nData Science & Technology Solutions Leader\n",
     "section": "",
-    "text": "Welcome! I build practical systems and model-risk programs. Below are a few highlights.\n\n\n\n  \n    \n    \n      \n      Joshua J. Middagh\n      Data Science and Technology Solutions Leader\n      Download Resume\n      \n        \n        \n      \n    \n    \n    \n      Delivering business value through visionary technology solutions.\n    As an executive technology leader, I drive innovation and transformation across AI, data science, and enterprise platforms—empowering organizations to achieve strategic goals, accelerate growth, and build resilient teams for the future.\n      \n         Years Experience\n         Projects Delivered\n         Industry Certifications"
+    "text": "Joshua J. Middagh\n      Data Science andTechnology Solutions Leader\n      Download Resume\n      \n        \n          \n        \n        \n          \n        \n      \n    \n\n    \n    \n      \n        Delivering business value through visionary technology solutions.\n      \n      \n        As an executive technology leader, I drive innovation and transformation across AI, data science, and enterprise platforms—\n        empowering organizations to achieve strategic goals, accelerate growth, and build resilient teams for the future.\n      \n      \n         Years Experience\n         Projects Delivered\n         Industry Certifications"
   },
   {
     "objectID": "about.html",
