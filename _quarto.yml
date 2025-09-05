@@ -16,7 +16,7 @@ website:
         text: Projects
       - href: about.qmd
         text: About
-      - href: assets/files/Joshua_Middagh_Resume.docx
+      - href: resume.qmd
         text: Resume
   page-footer:
     center: "© 2025 Joshua J. Middagh"

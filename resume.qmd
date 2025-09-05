@@ -1,0 +1,65 @@
+---
+page-layout: full
+format:
+  html:
+    toc: false
+    smooth-scroll: true
+---
+
+## Joshua J. Middagh  
+**Executive Leader • Data & Technology**  
+Cave Creek, AZ • jjmiddagh@outlook.com • [linkedin.com/in/joshua-middagh-it-professional](https://linkedin.com/in/joshua-middagh-it-professional) • [jjmiddagh.github.io/portfolio/](https://jjmiddagh.github.io/portfolio/)
+
+### Executive Summary
+Enterprise data & technology leader with 25+ years delivering technology at scale in regulated industries. Modernizes platforms, builds data products, and embeds Responsible AI so businesses grow faster with lower risk. Creator of an AI Model Certification platform assessing ethics, security, and compliance to accelerate trustworthy AI deployments.
+
+### Executive Impact Snapshot
+- Modernized a $30M enterprise data platform across 7 COSAs; cut audit prep time 40% and accelerated delivery 25%.
+- Founded an enterprise vulnerability working group (“Vanguard”); shortened remediation cycles 40% and strengthened risk posture.
+- Productized data‑protection controls (tokenization, classification); reduced high‑risk data surface 70% and unlocked compliant analytics.
+- Embedded Responsible AI governance enabling predictive models in risk‑sensitive domains with full compliance clearance.
+- Led cross‑functional portfolio gating linking data/AI capacity to business OKRs; eliminated conflicting initiatives enterprise‑wide.
+
+### Core Focus
+Data & AI Strategy • Responsible AI & Model Risk • Data Product Management • Enterprise Data Platforms • Cloud Transformation • Regulatory Readiness • Portfolio & Operating Models
+
+### Technologies & Platforms
+Azure • AWS • GCP • Snowflake • Databricks • Python • SQL • scikit‑learn • Docker • Kubernetes • Tableau • Power BI • Data Protection (e.g., Tokenization) • Catalog/Lineage
+
+### Regulatory & Frameworks
+NIST AI RMF • Model Risk (SR 11‑7) • FFIEC/OCC • SOX/GLBA
+
+### Professional Experience
+
+**Director, Enterprise Data & Analytics Platform — USAA — Phoenix, AZ**  
+*2024 – Present*  
+- Modernized a $30M enterprise data platform across 7 COSAs; improved availability and reduced compliance audit prep time by 40%.
+- Built cross‑COSA planning frameworks adopted enterprise‑wide; eliminated project conflicts and cut delivery cycle time by 25%.
+- Founded Enterprise Vulnerability Working Group (“Vanguard”); reduced remediation cycles 40% and lowered organizational security exposure.
+- Ran Data Protection Assessment across 10 BUs; closed regulatory gaps and lifted audit readiness to >95%.
+- Embedded governance in risk‑sensitive AI/ML use cases; enabled predictive risk models with full compliance clearance.
+
+**Senior Manager, IT Strategy & Risk — USAA — Phoenix, AZ**  
+*2021 – 2024*  
+- Embedded enterprise risk frameworks into $12M+ technology portfolios; raised governance maturity by 30%.
+- Championed tokenization & data‑protection platforms; reduced sensitive‑data exposure by 70%.
+- Co‑designed continuity frameworks with Product & Ops; cut recovery time objectives 50% and improved audit transparency.
+
+**Technology Leadership Roles (Infrastructure & Data Platforms) — Multiple Enterprises**  
+*1998 – 2021*  
+- Led teams in infrastructure modernization, enterprise data warehousing, and BI adoption to enable advanced analytics and AI/ML.
+- Delivered cost savings via vendor consolidation, rightsizing infrastructure, and automation.
+
+### Selected AI Products & Platforms
+- **AI Model Certification Platform** — Assesses ethics, compliance, and security to accelerate trustworthy AI deployments.
+- **Customer Churn Prediction** — Improved retention targeting by 12% on telecom dataset; packaged for portfolio site use.
+- **AI Bias Auditing Tool** — Surfaced 18% variance in resume‑screening acceptance rates; informed fair‑hiring practices.
+
+### Education
+- Master of Science, Data Science — Eastern University  
+- Bachelor of Science, Computer Information Systems — Northern Arizona University
+
+<style>
+.buttons .btn { margin-right: .5rem; }
+@media print { a[href]:after { content: ""; } /* cleaner print */ }
+</style>
