@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: _site
+  anchor-sections: false
 metadata:
   lang: en
   encoding: utf-8

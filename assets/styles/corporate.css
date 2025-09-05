@@ -54,3 +54,30 @@
 .stats .stat .num { font-size: 1.5rem; font-weight: 800; color: var(--brand-accent); }
 
 .name-heading .anchorjs-link { display: none !important; }
+
+
+:root{
+  --brand-accent:#2563eb;
+  --text-strong:#2c3e50;
+  --text-muted:#475569;
+  --border:#e5e7eb;
+  --space-2:.5rem; --space-4:1.5rem; --container:1100px;
+}
+body{ line-height:1.6; letter-spacing:.01em; }
+h1,h2,h3{ letter-spacing:.005em; }
+
+/* Polished buttons + cards */
+.btn-primary{ background:var(--brand-accent); border-color:var(--brand-accent); }
+.btn-primary:hover,.btn-primary:focus{ filter:brightness(0.92); }
+.summary-card{ border-radius:12px; box-shadow:0 2px 16px #0001; background:#fff; }
+
+/* Left column: photo centered; name truly centered, no anchor icon */
+.profile-photo{ display:block; margin:0 auto var(--space-2); }
+.profile-name{ display:block; width:100%; text-align:center; color:var(--text-strong); margin-top:.15rem; }
+.profile-name .anchorjs-link{ display:none !important; } /* hide chain icon on this heading */
+
+/* Text & stats on the right */
+.summary-lead{ color:#2980b9; font-style:italic; margin-top:0; }
+.summary-text{ color:var(--text-strong); }
+.stats{ gap: var(--space-4); }
+.stats .num{ color:var(--brand-accent); font-weight:800; font-size:1.5rem; }
