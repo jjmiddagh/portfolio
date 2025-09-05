@@ -52,3 +52,5 @@
 .stats { gap: 1.25rem; }
 .stats .stat { color: #2c3e50; }
 .stats .stat .num { font-size: 1.5rem; font-weight: 800; color: var(--brand-accent); }
+
+.name-heading .anchorjs-link { display: none !important; }
