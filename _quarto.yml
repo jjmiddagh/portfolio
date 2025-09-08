@@ -1,7 +1,6 @@
 project:
   type: website
   output-dir: _site
-  anchor-sections: false
 metadata:
   lang: en
   encoding: utf-8
@@ -28,4 +27,5 @@ format:
     theme: flatly
     toc: false
     smooth-scroll: true
+    anchor-sections: false
     css: assets/styles/corporate.css
