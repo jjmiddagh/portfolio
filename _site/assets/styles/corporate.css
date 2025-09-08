@@ -81,3 +81,101 @@ h1,h2,h3{ letter-spacing:.005em; }
 .summary-text{ color:var(--text-strong); }
 .stats{ gap: var(--space-4); }
 .stats .num{ color:var(--brand-accent); font-weight:800; font-size:1.5rem; }
+
+/* ===== Section header (Selected Work) ===== */
+.container-xl {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;          /* small side padding on narrow screens */
+}
+.section-title {
+  text-align: center;
+  margin: 1.25rem 0 .25rem;
+  font-weight: 800;
+  letter-spacing: .005em;
+}
+.section-subtitle {
+  text-align: center;
+  color: #475569;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+.section-divider {
+  height: 1px; border: 0;
+  margin: 1.25rem auto 1.75rem;
+  background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+  max-width: 780px;
+}
+
+/* ===== Project cards polish ===== */
+.quarto-grid .card {
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 10px rgba(0,0,0,.04);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.quarto-grid .card:hover {
+  transform: translateY(-2px);
+  border-color: #d7dce3;
+  box-shadow: 0 6px 24px rgba(0,0,0,.08);
+}
+
+/* Consistent 16:9 thumbnails in listings */
+.quarto-grid .card-img-top,
+.quarto-grid .thumbnail-image {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Category pills (Quarto listing categories) */
+.listing-categories .listing-category {
+  display: inline-block;
+  font-size: .8rem;
+  padding: .2rem .5rem;
+  margin: .15rem .25rem 0 0;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+}
+
+/* === Project cards: polish + CTAs === */
+.quarto-grid .card {
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 10px rgba(0,0,0,.04);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.quarto-grid .card:hover {
+  transform: translateY(-2px);
+  border-color: #d7dce3;
+  box-shadow: 0 6px 24px rgba(0,0,0,.08);
+}
+
+/* Consistent 16:9 thumbnails */
+.quarto-grid .card-img-top,
+.quarto-grid .thumbnail-image { aspect-ratio: 16 / 9; object-fit: cover; }
+
+/* Stronger title and make it feel like a primary CTA */
+.quarto-grid .card-title a {
+  color: #111827;
+  font-weight: 800;
+  text-decoration: none;
+}
+.quarto-grid .card-title a:hover { text-decoration: underline; }
+
+/* Compact description */
+.quarto-grid .card-text { color:#334155; line-height:1.5; }
+
+/* Category pills (tags) */
+.listing-categories .listing-category {
+  display:inline-block; font-size:.8rem; padding:.2rem .5rem; margin:.15rem .25rem 0 0;
+  border-radius:999px; background:#eef2ff; color:#334155; border:1px solid #e2e8f0;
+}
+
+/* Secondary CTA (View repo →) */
+.card-cta {
+  display:inline-block; margin-top:.5rem; font-weight:600;
+  color:#2563eb; text-decoration:none;
+}
+.card-cta:hover { text-decoration: underline; }

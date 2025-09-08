@@ -11,7 +11,7 @@ listing:
 
 <!-- Title only (centered, with safe bottom space) -->
 <div style="text-align:center; margin:0 0 .6rem 0;">
-  <h1 style="font-size:2.25rem; font-weight:800; margin:0 0 .25rem 0; line-height:1.1;">
+  <h1 style="font-size:2.25rem; font-weight:800; margin:0 0 .25rem 0; line-height:1.1; text-align: center;">
     Data Science &amp; Technology Solutions Leader
   </h1>
 </div>
@@ -28,8 +28,8 @@ listing:
           display:flex; flex-direction:column; align-items:flex-start;
           gap:.65rem; text-align:center;
         ">
-          <img src="assets/images/profile.jpg" alt="Joshua J. Middagh"
-            style="width:140px; height:140px; object-fit:cover; border-radius:50%;
+          <img src="assets/images/headshot-2d736af8-4c43-4e1d-9cf5-f1253e18826a.jpg" alt="Joshua J. Middagh"
+            style="width:200px; height:200px; object-fit:cover; border-radius:65%;
             box-shadow:0 2px 12px #0002; display:block; margin:0 auto .5rem;">
 
           <h2 class="profile-name" style="font-size:1.3em;font-weight:700;margin:0;padding:0;border:0;">
@@ -62,7 +62,6 @@ listing:
           </div>
         </div>
       </div>
-
 
     <!-- RIGHT: text -->
     <div style="flex:1 1 auto; margin-top:.25rem;">
@@ -98,4 +97,10 @@ animateStat('exp-stat', 25, 800);
 animateStat('proj-stat', 30, 800);
 animateStat('cert-stat', 3, 800);
 </script>
+<div class="container-xl">
+  <h2 class="section-title">Selected Work</h2>
+  <p class="section-subtitle">A few projects that highlight systems, AI, and model-risk work.</p>
+  <hr class="section-divider">
+</div>
 ```
+
