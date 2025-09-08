@@ -6,7 +6,7 @@ categories: [ML, Portfolio]
 image: thumbnail.png
 featured: true
 priority: 1
-repo_url: "https://github.com/your/repo"
+repo_url: "https://github.com/jjmiddagh/customer_churn"
 demo_url: "https://your-demo.app"
 ---
 
