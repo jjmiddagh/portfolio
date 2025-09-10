@@ -236,3 +236,5 @@ section.quarto-listing-container .quarto-grid .card .card-img-top {
 
 /* Make sure cards don't impose their own width */
 .project-card { width: 100%; box-sizing: border-box; }
+
+.selected-work { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }

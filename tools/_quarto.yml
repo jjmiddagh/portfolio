@@ -3,7 +3,8 @@
   output-dir: _site
 
 website:
-  title: \"Joshua J. Middagh â€” Portfolio\"
+  title: \"Joshua J. Middagh” Portfolio\"
+  site-url: https://jjmiddagh.github.io/portfolio
   navbar:
     right:
       - href: index.qmd
