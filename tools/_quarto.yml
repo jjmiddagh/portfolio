@@ -13,7 +13,7 @@ website:
       - href: about.qmd
         text: About
       - href: files/Joshua_Middagh_Resume.pdf
-        text: RÃ©sumÃ©
+        text: Resume
   page-footer:
     center: \"Â© {{< year >}} Joshua J. Middagh\"
   favicon: assets/images/favicon.png
@@ -23,3 +23,4 @@ format:
     theme: cosmo
     toc: false
     smooth-scroll: true
+    css: assets/styles/corporate.css
