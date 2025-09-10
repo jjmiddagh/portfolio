@@ -1,0 +1,36 @@
+---
+title: "Customer Churn Prediction"
+page-layout: article
+image: /portfolio/assets/images/thumbnails/churn-prediction.png
+description: "Telecom churn pipeline with feature engineering, class imbalance handling, model evaluation, and deployment-ready artifacts."
+---
+
+## Summary
+A production-style pipeline that predicts customer churn and demonstrates practical controls:
+- Structured feature engineering & leakage checks  
+- Class imbalance handled with **class_weight='balanced'** (optionally SMOTE)  
+- Baselines (LogReg) vs boosted trees (XGBoost), ready for calibration  
+- Evaluation: ROC-AUC, PR-AUC, F1; thresholding for operations
+
+**Repo:** [github.com/jjmiddagh/customer_churn](https://github.com/jjmiddagh/customer_churn)
+
+## Pipeline
+1. Data ingestion & validation  
+2. Preprocessing (OneHotEncoder for categoricals, StandardScaler for numerics)  
+3. Train/validation split with stratification  
+4. Imbalance mitigation  
+5. Model training & hyper-param search  
+6. (Optional) probability calibration + cost-based threshold  
+7. Metrics & model card  
+8. Save artifacts for deployment
+
+## Demo App
+A Streamlit app allows thresholding and simulating a new customer to see predicted churn probability.
+
+**Data:** `data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv` with target `Churn`.
+
+## Results (sample)
+- ROC-AUC: **~0.90–0.92** (LogReg/XGBoost)  
+- F1 (positive=churn): **~0.60–0.65** (depends on threshold)  
+
+> Next steps: add calibration (Platt/Isotonic), SHAP explanations, fairness/stability checks, and a lightweight model card.

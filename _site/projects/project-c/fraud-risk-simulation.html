@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Monte Carlo engine for model risk limits with fast scenario sampling and automated sensitivity reports.  View repo → Case study → ">
 
-<title>Portfolio</title>
+<title>Fraud Risk Simulation – Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/images/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ffa9a6279353761231ec249df0a7fdd3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/images/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ffa9a6279353761231ec249df0a7fdd3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="assets/styles/corporate.css">
+<link rel="stylesheet" href="../../assets/styles/corporate.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -81,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Portfolio</span>
     </a>
   </div>
@@ -94,19 +95,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
 </ul>
@@ -122,150 +123,72 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 style="font-size:2.25rem; font-weight:800; margin:0 0 .25rem 0; line-height:1.1; text-align: center;" class="title display-7">
-Data Science &amp; Technology Solutions Leader
-</h1></header>
+<main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Fraud Risk Simulation</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">Risk</div>
+    <div class="quarto-category">Python</div>
+  </div>
+  </div>
 
-
-
-<style>
-/* shrink listing card images on the home page */
-section.quarto-listing-container .listing-image img {
-  max-width: 340px; width: 100%; height: auto; display: block; margin: 0 auto 1rem;
-  object-fit: cover;
-}
-</style>
-<!-- Title only (centered, with safe bottom space) -->
-<div style="text-align:center; margin:0 0 .6rem 0;">
-
-</div>
-<!-- White card widened; NO negative margin (prevents overlap) -->
-<div style="max-width:1100px; margin:0.5rem auto 1.5rem; padding:1em 1em 1em 1em; background:#fff; border-radius:12px; box-shadow:0 2px 16px #0001; text-align:center;">
-  <!-- Left/Right layout (not centered) -->
-  <div style="display:flex; align-items:flex-start; gap:2.25em; justify-content:flex-start;">
-    <!-- LEFT: hero (strict left-aligned stack) -->
-      <div style="flex:0 0 220px;">
-        <div style="
-          width:220px; margin:0;
-          display:flex; flex-direction:column; align-items:flex-start;
-          gap:.65rem; text-align:center;
-        ">
-          <img src="assets/images/headshot-2d736af8-4c43-4e1d-9cf5-f1253e18826a.jpg" alt="Joshua J. Middagh" style="width:200px; height:200px; object-fit:cover;
-            box-shadow:0 2px 12px #0002; display:block; margin:0 auto .5rem;">
-
-          <h2 class="profile-name" style="font-size:1.3em;font-weight:700;margin:0;padding:0;border:0;text-align:center;margin-left:auto;margin-right:auto;">
-            Joshua&nbsp;J.&nbsp;Middagh
-          </h2>
-          <div style="font-size:1em;color:#34495e;line-height:1.35;
-                      max-width:26ch; text-align:center;">
-            Data Science and<br>Technology Solutions Leader
-          </div>
-
-          <a href="assets/files/Joshua_Middagh_Resume.docx" style="display:block; width:100%; text-align:center;
-                    margin:.5rem 0; padding:.55rem 1.2rem;
-                    background:#2980b9; color:#fff; font-weight:600;
-                    border-radius:8px; text-decoration:none;
-                    box-shadow:0 2px 8px #2980b922;">
-            Download Resume
-          </a>
-
-          <div style="display:flex; align-items:center; justify-content:flex-start;
-                      gap:.85rem; margin-top:.25rem;">
-            <a href="https://github.com/jjmiddagh" title="GitHub" target="_blank">
-              <img src="assets/images/github.svg" alt="GitHub" style="width:24px;height:24px;opacity:.85; display:block;">
-            </a>
-            <a href="https://www.linkedin.com/in/joshua-middagh-it-professional/" title="LinkedIn" target="_blank">
-              <img src="assets/images/linkedin.png" alt="LinkedIn" style="width:24px;height:24px;opacity:.85; display:block;">
-            </a>
-          </div>
-        </div>
-      </div>
-
-    <!-- RIGHT: text -->
-    <div style="flex:1 1 auto; margin-top:.25rem;">
-      <p style="font-style:italic; color:#2980b9; margin:0 0 1em 0; font-size:1.1em; text-align:left;">
-        Delivering business value through visionary technology solutions.
-      </p>
-      <p style="margin:0 0 1.25em 0; font-size:1.05em; color:#34495e; text-align:justify;">
-        As an executive technology leader, I drive innovation and transformation across AI, data science, and enterprise platforms—
-        empowering organizations to achieve strategic goals, accelerate growth, and build resilient teams for the future.
-      </p>
-      <div style="display:flex; justify-content:center; gap:2em; margin-bottom:1em; flex-wrap:wrap;">
-        <div style="font-size:1.1em; color:#2c3e50;"><span style="font-size:1.5em; font-weight:bold; color:#2980b9;" id="exp-stat"></span> Years Experience</div>
-        <div style="font-size:1.1em; color:#2c3e50;"><span style="font-size:1.5em; font-weight:bold; color:#2980b9;" id="proj-stat"></span> Projects Delivered</div>
-        <div style="font-size:1.1em; color:#2c3e50;"><span style="font-size:1.5em; font-weight:bold; color:#2980b9;" id="cert-stat"></span> Industry Certifications</div>
-      </div>
-    </div>
+<div>
+  <div class="description">
+    <p>Monte Carlo engine for model risk limits with fast scenario sampling and automated sensitivity reports. <span class="card-ctas"> <a href="https://github.com/jjmiddagh/fraud-risk-simulation" class="card-cta">View repo →</a> <a href="../../projects/project-c/fraud-risk-simulation.html" class="card-cta secondary">Case study →</a> </span></p>
   </div>
 </div>
 
-<script>
-function animateStat(id, target, duration) {
-  var el = document.getElementById(id);
-  if (!el) return;
-  var step = Math.ceil(target / (duration/20));
-  var val = 0;
-  var interval = setInterval(function() {
-    val += step;
-    if (val >= target) { val = target; clearInterval(interval); }
-    el.textContent = val;
-  }, 20);
-}
-animateStat('exp-stat', 25, 800);
-animateStat('proj-stat', 30, 800);
-animateStat('cert-stat', 3, 800);
-</script>
-<div class="container-xl">
-  <h2 class="section-title">Selected Work</h2>
-  <p class="section-subtitle">A few projects that highlight systems, AI, and model-risk work.</p>
-  <hr class="section-divider">
-</div>
-<div class="projects-grid">
 
-  <!-- Fraud Risk Simulation -->
-  <div class="project-card">
-    <a href="./projects/fraud-risk-simulation.html" class="project-thumb" aria-label="Fraud Risk Simulation">
-      <img src="assets/images/thumbnails/fraud-risk-simulation.png" alt="Fraud Risk Simulation – Streamlit app thumbnail" loading="lazy">
-    </a>
-    <h3>Fraud Risk Simulation</h3>
-    <p>Monte Carlo engine for model risk limits with fast scenario sampling and automated sensitivity reports.</p>
-    <div class="card-ctas">
-      <a href="https://github.com/jjmiddagh/fraud-risk-simulation" class="card-cta">View repo →</a>
-      <a href="./projects/fraud-risk-simulation.html" class="card-cta secondary">Case study →</a>
-    </div>
+<div class="quarto-title-meta">
+
+    
+  
+    
   </div>
-
-  <!-- Customer Churn Prediction -->
-  <div class="project-card">
-    <a href="./portfolio/projects/churn-prediction.html" class="project-thumb" aria-label="Customer Churn Prediction">
-      <img src="assets/images/thumbnails/churn-prediction.png" alt="Customer Churn – Streamlit overview thumbnail" loading="lazy">
-    </a>
-    <h3>Customer Churn Prediction</h3>
-    <p>End-to-end ML pipeline with feature engineering, class balancing, and deployment-ready models.</p>
-    <div class="card-ctas">
-      <a href="https://github.com/jjmiddagh/customer_churn" class="card-cta">View repo →</a>
-      <a href="./portfolio/projects/churn-prediction.html" class="card-cta secondary">Case study →</a>
-    </div>
-  </div>
-
-  <!-- Airbnb Dynamic Pricing -->
-  <div class="project-card">
-    <a href="./projects/airbnb-pricing.html" class="project-thumb" aria-label="Airbnb Dynamic Pricing">
-      <img src="assets/images/thumbnails/airbnb-pricing.png" alt="Airbnb Dynamic Pricing thumbnail" loading="lazy">
-    </a>
-    <h3>Airbnb Dynamic Pricing</h3>
-    <p>ML engine for Flagstaff short-term rentals with dynamic pricing optimization and forecasting.</p>
-    <div class="card-ctas">
-      <a href="https://github.com/jjmiddagh/airbnb-pricing" class="card-cta">View repo →</a>
-      <a href="./projects/airbnb-pricing.html" class="card-cta secondary">Case study →</a>
-    </div>
-  </div>
-
-</div>
+  
 
 
+</header>
 
+
+<section id="summary" class="level2">
+<h2 data-anchor-id="summary">Summary</h2>
+<p>A Monte Carlo engine that quantifies monthly fraud losses and model <strong>risk limits</strong> with automated <strong>sensitivity</strong>. It demonstrates executive storytelling, reproducible analytics, and clear KPIs: <strong>Expected Loss</strong>, <strong>VaR(95)</strong>, <strong>CVaR(95)</strong>, and <strong>Budget Breach Probability</strong>.</p>
+</section>
+<section id="business-context" class="level2">
+<h2 data-anchor-id="business-context">Business Context</h2>
+<p>Fraud leaders must set monthly loss budgets, evaluate model detection rates, and justify spend on controls. This simulator tests whether the current posture keeps losses within budget under baseline and stress conditions.</p>
+</section>
+<section id="method" class="level2">
+<h2 data-anchor-id="method">Method</h2>
+<ul>
+<li><strong>Frequency</strong>: Fraud count ~ Poisson(λ = <em>transactions</em> × <em>fraud rate</em>).</li>
+<li><strong>Severity</strong>: Undetected fraud losses ~ Lognormal(<em>μ, σ</em>).</li>
+<li><strong>Controls</strong>: Detection rate reduces realized fraud; we track breach probability vs.&nbsp;budget.</li>
+<li><strong>Sensitivity</strong>: Tornado-style one-way perturbations of key drivers (fraud rate, detection, severity σ).</li>
+</ul>
+</section>
+<section id="kpis-report" class="level2">
+<h2 data-anchor-id="kpis-report">KPIs &amp; Report</h2>
+<p>Run <code>python run_simulation.py</code> and view <code>outputs/report.md</code>. It includes distribution and sensitivity plots.</p>
+</section>
+<section id="extend" class="level2">
+<h2 data-anchor-id="extend">Extend</h2>
+<ul>
+<li>Plug your fraud score model to calibrate <em>p(fraud)</em> by decile.</li>
+<li>Add costs for false positives and ops load.</li>
+<li>Stress scenarios via <code>scenarios.make_stress</code> or Latin-hypercube <code>lhs_samples</code>.</li>
+</ul>
+</section>
+<section id="code" class="level2">
+<h2 data-anchor-id="code">Code</h2>
+<p>The core engine lives in <code>fraud_risk_sim/</code>. A Streamlit app at <code>app/app.py</code> offers interactive exploration.</p>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -679,5 +602,5 @@ animateStat('cert-stat', 3, 800);
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

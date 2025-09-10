@@ -49,6 +49,55 @@
     "text": "Executive Leader • Data & Technology\nCave Creek, AZ • jjmiddagh@outlook.com • linkedin.com/in/joshua-middagh-it-professional • jjmiddagh.github.io/portfolio/\n\n\nEnterprise data & technology leader with 25+ years delivering technology at scale in regulated industries. Modernizes platforms, builds data products, and embeds Responsible AI so businesses grow faster with lower risk. Creator of an AI Model Certification platform assessing ethics, security, and compliance to accelerate trustworthy AI deployments.\n\n\n\n\nModernized a $30M enterprise data platform across 7 COSAs; cut audit prep time 40% and accelerated delivery 25%.\nFounded an enterprise vulnerability working group (“Vanguard”); shortened remediation cycles 40% and strengthened risk posture.\nProductized data‑protection controls (tokenization, classification); reduced high‑risk data surface 70% and unlocked compliant analytics.\nEmbedded Responsible AI governance enabling predictive models in risk‑sensitive domains with full compliance clearance.\nLed cross‑functional portfolio gating linking data/AI capacity to business OKRs; eliminated conflicting initiatives enterprise‑wide.\n\n\n\n\nData & AI Strategy • Responsible AI & Model Risk • Data Product Management • Enterprise Data Platforms • Cloud Transformation • Regulatory Readiness • Portfolio & Operating Models\n\n\n\nAzure • AWS • GCP • Snowflake • Databricks • Python • SQL • scikit‑learn • Docker • Kubernetes • Tableau • Power BI • Data Protection (e.g., Tokenization) • Catalog/Lineage\n\n\n\nNIST AI RMF • Model Risk (SR 11‑7) • FFIEC/OCC • SOX/GLBA\n\n\n\nDirector, Enterprise Data & Analytics Platform — USAA — Phoenix, AZ\n2024 – Present\n- Modernized a $30M enterprise data platform across 7 COSAs; improved availability and reduced compliance audit prep time by 40%. - Built cross‑COSA planning frameworks adopted enterprise‑wide; eliminated project conflicts and cut delivery cycle time by 25%. - Founded Enterprise Vulnerability Working Group (“Vanguard”); reduced remediation cycles 40% and lowered organizational security exposure. - Ran Data Protection Assessment across 10 BUs; closed regulatory gaps and lifted audit readiness to &gt;95%. - Embedded governance in risk‑sensitive AI/ML use cases; enabled predictive risk models with full compliance clearance.\nSenior Manager, IT Strategy & Risk — USAA — Phoenix, AZ\n2021 – 2024\n- Embedded enterprise risk frameworks into $12M+ technology portfolios; raised governance maturity by 30%. - Championed tokenization & data‑protection platforms; reduced sensitive‑data exposure by 70%. - Co‑designed continuity frameworks with Product & Ops; cut recovery time objectives 50% and improved audit transparency.\nTechnology Leadership Roles (Infrastructure & Data Platforms) — Multiple Enterprises\n1998 – 2021\n- Led teams in infrastructure modernization, enterprise data warehousing, and BI adoption to enable advanced analytics and AI/ML. - Delivered cost savings via vendor consolidation, rightsizing infrastructure, and automation.\n\n\n\n\nAI Model Certification Platform — Assesses ethics, compliance, and security to accelerate trustworthy AI deployments.\nCustomer Churn Prediction — Improved retention targeting by 12% on telecom dataset; packaged for portfolio site use.\nAI Bias Auditing Tool — Surfaced 18% variance in resume‑screening acceptance rates; informed fair‑hiring practices.\n\n\n\n\n\nMaster of Science, Data Science — Eastern University\n\nBachelor of Science, Computer Information Systems — Northern Arizona University"
   },
   {
+    "objectID": "projects/project-b/churn-prediction.html",
+    "href": "projects/project-b/churn-prediction.html",
+    "title": "Customer Churn Prediction",
+    "section": "",
+    "text": "A production-style pipeline that predicts customer churn and demonstrates practical controls: - Structured feature engineering & leakage checks\n- Class imbalance handled with class_weight=‘balanced’ (optionally SMOTE)\n- Baselines (LogReg) vs boosted trees (XGBoost), ready for calibration\n- Evaluation: ROC-AUC, PR-AUC, F1; thresholding for operations\nRepo: github.com/jjmiddagh/customer_churn"
+  },
+  {
+    "objectID": "projects/project-b/churn-prediction.html#summary",
+    "href": "projects/project-b/churn-prediction.html#summary",
+    "title": "Customer Churn Prediction",
+    "section": "",
+    "text": "A production-style pipeline that predicts customer churn and demonstrates practical controls: - Structured feature engineering & leakage checks\n- Class imbalance handled with class_weight=‘balanced’ (optionally SMOTE)\n- Baselines (LogReg) vs boosted trees (XGBoost), ready for calibration\n- Evaluation: ROC-AUC, PR-AUC, F1; thresholding for operations\nRepo: github.com/jjmiddagh/customer_churn"
+  },
+  {
+    "objectID": "projects/project-b/churn-prediction.html#pipeline",
+    "href": "projects/project-b/churn-prediction.html#pipeline",
+    "title": "Customer Churn Prediction",
+    "section": "Pipeline",
+    "text": "Pipeline\n\nData ingestion & validation\n\nPreprocessing (OneHotEncoder for categoricals, StandardScaler for numerics)\n\nTrain/validation split with stratification\n\nImbalance mitigation\n\nModel training & hyper-param search\n\n(Optional) probability calibration + cost-based threshold\n\nMetrics & model card\n\nSave artifacts for deployment"
+  },
+  {
+    "objectID": "projects/project-b/churn-prediction.html#demo-app",
+    "href": "projects/project-b/churn-prediction.html#demo-app",
+    "title": "Customer Churn Prediction",
+    "section": "Demo App",
+    "text": "Demo App\nA Streamlit app allows thresholding and simulating a new customer to see predicted churn probability.\nData: data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv with target Churn."
+  },
+  {
+    "objectID": "projects/project-b/churn-prediction.html#results-sample",
+    "href": "projects/project-b/churn-prediction.html#results-sample",
+    "title": "Customer Churn Prediction",
+    "section": "Results (sample)",
+    "text": "Results (sample)\n\nROC-AUC: ~0.90–0.92 (LogReg/XGBoost)\n\nF1 (positive=churn): ~0.60–0.65 (depends on threshold)\n\n\nNext steps: add calibration (Platt/Isotonic), SHAP explanations, fairness/stability checks, and a lightweight model card."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\nData Science & Technology Solutions Leader\n",
+    "section": "",
+    "text": "Joshua J. Middagh\n          \n          \n            Data Science andTechnology Solutions Leader\n          \n\n          \n            Download Resume\n          \n\n          \n            \n              \n            \n            \n              \n            \n          \n        \n      \n\n    \n    \n      \n        Delivering business value through visionary technology solutions.\n      \n      \n        As an executive technology leader, I drive innovation and transformation across AI, data science, and enterprise platforms—\n        empowering organizations to achieve strategic goals, accelerate growth, and build resilient teams for the future.\n      \n      \n         Years Experience\n         Projects Delivered\n         Industry Certifications\n      \n    \n  \n\n\n\n\n  Selected Work\n  A few projects that highlight systems, AI, and model-risk work.\n  \n\n\n\n  \n  \n    \n      \n    \n    Fraud Risk Simulation\n    Monte Carlo engine for model risk limits with fast scenario sampling and automated sensitivity reports.\n    \n      View repo →\n      Case study →\n    \n  \n\n  \n  \n    \n      \n    \n    Customer Churn Prediction\n    End-to-end ML pipeline with feature engineering, class balancing, and deployment-ready models.\n    \n      View repo →\n      Case study →\n    \n  \n\n  \n  \n    \n      \n    \n    Airbnb Dynamic Pricing\n    ML engine for Flagstaff short-term rentals with dynamic pricing optimization and forecasting.\n    \n      View repo →\n      Case study →"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "About Me\nHi, I’m Josh â€” an AI Solutions Architect and Data Science Executive. This portfolio showcases selected projects, case studies, and experiments."
+  },
+  {
     "objectID": "projects/project-a/index.html",
     "href": "projects/project-a/index.html",
     "title": "Telecom Churn Prediction",
@@ -77,20 +126,6 @@
     "text": "Results\nKey outcomes, metrics, or visuals.\nCode: GitHub\nLive Demo: Open"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "About Me\nHi, I’m Josh â€” an AI Solutions Architect and Data Science Executive. This portfolio showcases selected projects, case studies, and experiments."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\nData Science & Technology Solutions Leader\n",
-    "section": "",
-    "text": "Joshua J. Middagh\n          \n          \n            Data Science andTechnology Solutions Leader\n          \n\n          \n            Download Resume\n          \n\n          \n            \n              \n            \n            \n              \n            \n          \n        \n      \n\n    \n    \n      \n        Delivering business value through visionary technology solutions.\n      \n      \n        As an executive technology leader, I drive innovation and transformation across AI, data science, and enterprise platforms—\n        empowering organizations to achieve strategic goals, accelerate growth, and build resilient teams for the future.\n      \n      \n         Years Experience\n         Projects Delivered\n         Industry Certifications\n      \n    \n  \n\n\n\n\n  Selected Work\n  A few projects that highlight systems, AI, and model-risk work."
-  },
-  {
     "objectID": "projects/project-b/index.html",
     "href": "projects/project-b/index.html",
     "title": "AI Bias Auditing",
@@ -117,6 +152,55 @@
     "title": "AI Bias Auditing",
     "section": "Results",
     "text": "Results\nKey outcomes, metrics, or visuals.\nCode: GitHub\nLive Demo: Open"
+  },
+  {
+    "objectID": "projects/project-c/fraud-risk-simulation.html",
+    "href": "projects/project-c/fraud-risk-simulation.html",
+    "title": "Fraud Risk Simulation",
+    "section": "",
+    "text": "A Monte Carlo engine that quantifies monthly fraud losses and model risk limits with automated sensitivity. It demonstrates executive storytelling, reproducible analytics, and clear KPIs: Expected Loss, VaR(95), CVaR(95), and Budget Breach Probability."
+  },
+  {
+    "objectID": "projects/project-c/fraud-risk-simulation.html#summary",
+    "href": "projects/project-c/fraud-risk-simulation.html#summary",
+    "title": "Fraud Risk Simulation",
+    "section": "",
+    "text": "A Monte Carlo engine that quantifies monthly fraud losses and model risk limits with automated sensitivity. It demonstrates executive storytelling, reproducible analytics, and clear KPIs: Expected Loss, VaR(95), CVaR(95), and Budget Breach Probability."
+  },
+  {
+    "objectID": "projects/project-c/fraud-risk-simulation.html#business-context",
+    "href": "projects/project-c/fraud-risk-simulation.html#business-context",
+    "title": "Fraud Risk Simulation",
+    "section": "Business Context",
+    "text": "Business Context\nFraud leaders must set monthly loss budgets, evaluate model detection rates, and justify spend on controls. This simulator tests whether the current posture keeps losses within budget under baseline and stress conditions."
+  },
+  {
+    "objectID": "projects/project-c/fraud-risk-simulation.html#method",
+    "href": "projects/project-c/fraud-risk-simulation.html#method",
+    "title": "Fraud Risk Simulation",
+    "section": "Method",
+    "text": "Method\n\nFrequency: Fraud count ~ Poisson(λ = transactions × fraud rate).\nSeverity: Undetected fraud losses ~ Lognormal(μ, σ).\nControls: Detection rate reduces realized fraud; we track breach probability vs. budget.\nSensitivity: Tornado-style one-way perturbations of key drivers (fraud rate, detection, severity σ)."
+  },
+  {
+    "objectID": "projects/project-c/fraud-risk-simulation.html#kpis-report",
+    "href": "projects/project-c/fraud-risk-simulation.html#kpis-report",
+    "title": "Fraud Risk Simulation",
+    "section": "KPIs & Report",
+    "text": "KPIs & Report\nRun python run_simulation.py and view outputs/report.md. It includes distribution and sensitivity plots."
+  },
+  {
+    "objectID": "projects/project-c/fraud-risk-simulation.html#extend",
+    "href": "projects/project-c/fraud-risk-simulation.html#extend",
+    "title": "Fraud Risk Simulation",
+    "section": "Extend",
+    "text": "Extend\n\nPlug your fraud score model to calibrate p(fraud) by decile.\nAdd costs for false positives and ops load.\nStress scenarios via scenarios.make_stress or Latin-hypercube lhs_samples."
+  },
+  {
+    "objectID": "projects/project-c/fraud-risk-simulation.html#code",
+    "href": "projects/project-c/fraud-risk-simulation.html#code",
+    "title": "Fraud Risk Simulation",
+    "section": "Code",
+    "text": "Code\nThe core engine lives in fraud_risk_sim/. A Streamlit app at app/app.py offers interactive exploration."
   },
   {
     "objectID": "projects.html",

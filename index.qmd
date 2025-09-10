@@ -9,6 +9,15 @@ listing:
     - featured: true
 ---
 
+<style>
+/* shrink listing card images on the home page */
+section.quarto-listing-container .listing-image img {
+  max-width: 340px; width: 100%; height: auto; display: block; margin: 0 auto 1rem;
+  object-fit: cover;
+}
+</style>
+
+
 <!-- Title only (centered, with safe bottom space) -->
 <div style="text-align:center; margin:0 0 .6rem 0;">
   <h1 style="font-size:2.25rem; font-weight:800; margin:0 0 .25rem 0; line-height:1.1; text-align: center;">
@@ -29,10 +38,10 @@ listing:
           gap:.65rem; text-align:center;
         ">
           <img src="assets/images/headshot-2d736af8-4c43-4e1d-9cf5-f1253e18826a.jpg" alt="Joshua J. Middagh"
-            style="width:200px; height:200px; object-fit:cover; border-radius:65%;
+            style="width:200px; height:200px; object-fit:cover;
             box-shadow:0 2px 12px #0002; display:block; margin:0 auto .5rem;">
 
-          <h2 class="profile-name" style="font-size:1.3em;font-weight:700;margin:0;padding:0;border:0;">
+          <h2 class="profile-name" style="font-size:1.3em;font-weight:700;margin:0;padding:0;border:0;text-align:center;margin-left:auto;margin-right:auto;">
             Joshua&nbsp;J.&nbsp;Middagh
           </h2>
           <div style="font-size:1em;color:#34495e;line-height:1.35;
@@ -102,5 +111,53 @@ animateStat('cert-stat', 3, 800);
   <p class="section-subtitle">A few projects that highlight systems, AI, and model-risk work.</p>
   <hr class="section-divider">
 </div>
+<div class="projects-grid">
+
+  <!-- Fraud Risk Simulation -->
+  <div class="project-card">
+    <a href="/projects/fraud-risk-simulation.html" class="project-thumb" aria-label="Fraud Risk Simulation">
+      <img src="assets/images/thumbnails/fraud-risk-simulation.png"
+           alt="Fraud Risk Simulation – Streamlit app thumbnail"
+           loading="lazy">
+    </a>
+    <h3>Fraud Risk Simulation</h3>
+    <p>Monte Carlo engine for model risk limits with fast scenario sampling and automated sensitivity reports.</p>
+    <div class="card-ctas">
+      <a href="https://github.com/jjmiddagh/fraud-risk-simulation" class="card-cta">View repo →</a>
+      <a href="/projects/fraud-risk-simulation.html" class="card-cta secondary">Case study →</a>
+    </div>
+  </div>
+
+  <!-- Customer Churn Prediction -->
+  <div class="project-card">
+    <a href="/portfolio/projects/churn-prediction.html" class="project-thumb" aria-label="Customer Churn Prediction">
+      <img src="assets/images/thumbnails/churn-prediction.png"
+          alt="Customer Churn – Streamlit overview thumbnail" loading="lazy">
+    </a>
+    <h3>Customer Churn Prediction</h3>
+    <p>End-to-end ML pipeline with feature engineering, class balancing, and deployment-ready models.</p>
+    <div class="card-ctas">
+      <a href="https://github.com/jjmiddagh/customer_churn" class="card-cta">View repo →</a>
+      <a href="/portfolio/projects/churn-prediction.html" class="card-cta secondary">Case study →</a>
+    </div>
+  </div>
+
+  <!-- Airbnb Dynamic Pricing -->
+  <div class="project-card">
+    <a href="/projects/airbnb-pricing.html" class="project-thumb" aria-label="Airbnb Dynamic Pricing">
+      <img src="assets/images/thumbnails/airbnb-pricing.png"
+           alt="Airbnb Dynamic Pricing thumbnail"
+           loading="lazy">
+    </a>
+    <h3>Airbnb Dynamic Pricing</h3>
+    <p>ML engine for Flagstaff short-term rentals with dynamic pricing optimization and forecasting.</p>
+    <div class="card-ctas">
+      <a href="https://github.com/jjmiddagh/airbnb-pricing" class="card-cta">View repo →</a>
+      <a href="/projects/airbnb-pricing.html" class="card-cta secondary">Case study →</a>
+    </div>
+  </div>
+
+</div>
+
 ```
 

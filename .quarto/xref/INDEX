@@ -37,5 +37,14 @@
   },
   "resume.qmd": {
     "resume.html": "103cb104"
+  },
+  "projects/project-c/card-front-matter.md": {
+    "card-front-matter.html": "aba0e460"
+  },
+  "projects/project-c/fraud-risk-simulation.qmd": {
+    "fraud-risk-simulation.html": "ab86b96a"
+  },
+  "projects/project-b/churn-prediction.qmd": {
+    "churn-prediction.html": "f833df9f"
   }
 }

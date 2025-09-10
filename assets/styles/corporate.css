@@ -5,18 +5,25 @@
   --brand-muted: #64748b;
   --brand-accent: #2563eb;
   --brand-border: #e5e7eb;
+
+  --text-strong:#2c3e50;
+  --text-muted:#475569;
+  --border:#e5e7eb;
+  --space-2:.5rem;
+  --space-4:1.5rem;
+  --container:1100px;
 }
 
-/* Tight title block */
+body{ line-height:1.6; letter-spacing:.01em; }
+h1,h2,h3{ letter-spacing:.005em; }
+
+/* ===== Header / Intro ===== */
 .home-intro { max-width: 960px; margin: .25rem auto 0; text-align: center; }
 .home-intro h1 { margin: 0 0 .4rem; line-height: 1.1; }
-
-/* Pull the hero up under the H1 (adjust as needed) */
-.hero-under-title { margin-top: -0.75rem; }   /* try -0.5rem … -1rem */
+.hero-under-title { margin-top: -0.75rem; }
 @media (max-width: 992px) { .hero-under-title { margin-top: .5rem; } }
 
-
-/* White card */
+/* ===== Cards / Buttons / Profile ===== */
 .summary-card {
   background: #fff;
   border-radius: 12px;
@@ -24,14 +31,13 @@
   padding: 1.75rem 1.75rem 1.25rem;
 }
 
-/* Left profile column */
-.profile-col { text-align: center; margin-top: -.5rem; } /* tweak -0.25rem..-1rem */
+.profile-col { text-align: center; margin-top: -.5rem; }
 .profile-photo {
   width: 140px; height: 140px; object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 2px 12px #0002;
-  margin-bottom: .75rem;
-  display: block; margin-left: auto; margin-right: auto;
+  margin: 0 auto .75rem;
+  display: block;
 }
 .profile-name {
   white-space: nowrap; text-align: center; margin-bottom: .25rem;
@@ -40,74 +46,22 @@
 .profile-subtitle { color: #475569; margin: .5rem 0 1rem; }
 .profile-cta { display: inline-block; margin: .5rem auto .75rem; }
 
-/* Social icons */
-.profile-icons img { width: 24px; height: 24px; opacity: .85; }
-.profile-icons a { margin: 0 .5rem; }
-
-/* Right text */
-.summary-lead { color: #2980b9; font-style: italic; margin-bottom: 1rem; margin-top: 0; }
-.summary-text { color: #34495e; margin-bottom: 1rem; text-align: justify; }
-
-/* Stats row */
-.stats { gap: 1.25rem; }
-.stats .stat { color: #2c3e50; }
-.stats .stat .num { font-size: 1.5rem; font-weight: 800; color: var(--brand-accent); }
-
-.name-heading .anchorjs-link { display: none !important; }
-
-
-:root{
-  --brand-accent:#2563eb;
-  --text-strong:#2c3e50;
-  --text-muted:#475569;
-  --border:#e5e7eb;
-  --space-2:.5rem; --space-4:1.5rem; --container:1100px;
-}
-body{ line-height:1.6; letter-spacing:.01em; }
-h1,h2,h3{ letter-spacing:.005em; }
-
-/* Polished buttons + cards */
 .btn-primary{ background:var(--brand-accent); border-color:var(--brand-accent); }
 .btn-primary:hover,.btn-primary:focus{ filter:brightness(0.92); }
-.summary-card{ border-radius:12px; box-shadow:0 2px 16px #0001; background:#fff; }
 
-/* Left column: photo centered; name truly centered, no anchor icon */
-.profile-photo{ display:block; margin:0 auto var(--space-2); }
-.profile-name{ display:block; width:100%; text-align:center; color:var(--text-strong); margin-top:.15rem; }
-.profile-name .anchorjs-link{ display:none !important; } /* hide chain icon on this heading */
-
-/* Text & stats on the right */
-.summary-lead{ color:#2980b9; font-style:italic; margin-top:0; }
-.summary-text{ color:var(--text-strong); }
-.stats{ gap: var(--space-4); }
-.stats .num{ color:var(--brand-accent); font-weight:800; font-size:1.5rem; }
-
-/* ===== Section header (Selected Work) ===== */
-.container-xl {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;          /* small side padding on narrow screens */
-}
+/* ===== Container / Section headings ===== */
+.container-xl { max-width: var(--container); margin: 0 auto; padding: 0 1rem; }
 .section-title {
-  text-align: center;
-  margin: 1.25rem 0 .25rem;
-  font-weight: 800;
-  letter-spacing: .005em;
+  text-align: center; margin: 1.25rem 0 .25rem; font-weight: 800; letter-spacing:.005em;
 }
-.section-subtitle {
-  text-align: center;
-  color: #475569;
-  margin: 0 0 1rem 0;
-  font-size: 1rem;
-}
+.section-subtitle { text-align: center; color:#475569; margin:0 0 1rem; font-size:1rem; }
 .section-divider {
-  height: 1px; border: 0;
-  margin: 1.25rem auto 1.75rem;
+  height:1px; border:0; margin:1.25rem auto 1.75rem;
   background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
-  max-width: 780px;
+  max-width:780px;
 }
 
-/* ===== Project cards polish ===== */
+/* ===== Quarto listing project cards (polish) ===== */
 .quarto-grid .card {
   border-radius: 14px;
   border: 1px solid #e5e7eb;
@@ -120,62 +74,165 @@ h1,h2,h3{ letter-spacing:.005em; }
   box-shadow: 0 6px 24px rgba(0,0,0,.08);
 }
 
-/* Consistent 16:9 thumbnails in listings */
-.quarto-grid .card-img-top,
-.quarto-grid .thumbnail-image {
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-
-/* Category pills (Quarto listing categories) */
-.listing-categories .listing-category {
-  display: inline-block;
-  font-size: .8rem;
-  padding: .2rem .5rem;
-  margin: .15rem .25rem 0 0;
-  border-radius: 999px;
-  background: #eef2ff;
-  color: #334155;
-  border: 1px solid #e2e8f0;
-}
-
-/* === Project cards: polish + CTAs === */
-.quarto-grid .card {
-  border-radius: 14px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 2px 10px rgba(0,0,0,.04);
-  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
-}
-.quarto-grid .card:hover {
-  transform: translateY(-2px);
-  border-color: #d7dce3;
-  box-shadow: 0 6px 24px rgba(0,0,0,.08);
-}
-
-/* Consistent 16:9 thumbnails */
-.quarto-grid .card-img-top,
-.quarto-grid .thumbnail-image { aspect-ratio: 16 / 9; object-fit: cover; }
-
-/* Stronger title and make it feel like a primary CTA */
-.quarto-grid .card-title a {
-  color: #111827;
-  font-weight: 800;
-  text-decoration: none;
-}
+/* Titles / text */
+.quarto-grid .card-title a { color:#111827; font-weight:800; text-decoration:none; }
 .quarto-grid .card-title a:hover { text-decoration: underline; }
-
-/* Compact description */
 .quarto-grid .card-text { color:#334155; line-height:1.5; }
 
-/* Category pills (tags) */
+/* Category pills */
 .listing-categories .listing-category {
   display:inline-block; font-size:.8rem; padding:.2rem .5rem; margin:.15rem .25rem 0 0;
   border-radius:999px; background:#eef2ff; color:#334155; border:1px solid #e2e8f0;
 }
 
-/* Secondary CTA (View repo →) */
-.card-cta {
-  display:inline-block; margin-top:.5rem; font-weight:600;
-  color:#2563eb; text-decoration:none;
+/* Card CTAs */
+.card-ctas { margin-top:.5rem; display:flex; gap:.75rem; flex-wrap:wrap; }
+.card-cta { display:inline-block; font-weight:600; text-decoration:none; color:#2563eb; }
+.card-cta:hover { text-decoration:underline; }
+.card-cta.secondary { color:#0f172a; opacity:.85; }
+.card-cta.secondary:hover { opacity:1; text-decoration:underline; }
+
+/* ======= IMAGE SIZE FIX (Selected Work on home) ======= */
+/* Clamp listing card images to a tidy height; strong specificity + last wins */
+section.quarto-listing-container .quarto-grid .card .card-img-top,
+section.quarto-listing-container .quarto-grid .thumbnail img,
+section.quarto-listing-container .quarto-grid .thumbnail-image,
+section.quarto-listing-container .quarto-grid .listing-image img {
+  height: 140px !important;
+  max-height: 140px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  overflow: hidden !important;
 }
-.card-cta:hover { text-decoration: underline; }
+
+/* Ensure the image wrapper doesn't stretch */
+section.quarto-listing-container .quarto-grid .thumbnail,
+section.quarto-listing-container .quarto-grid .card .thumbnail,
+section.quarto-listing-container .quarto-grid .card .card-img-top,
+section.quarto-listing-container .quarto-grid .thumbnail-image {
+  max-height: 140px !important;
+  overflow: hidden !important;
+}
+/* === SELECTED WORK: clamp listing card images on home === */
+/* Hit all common Quarto listing/grid variants */
+.quarto-listing-container-grid .quarto-grid img,
+.quarto-listing .quarto-grid img,
+.quarto-grid .card-img-top,
+.quarto-grid .thumbnail-image,
+.quarto-grid .thumbnail img {
+  height: 140px !important;     /* change to 120px/160px if you prefer */
+  max-height: 140px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  overflow: hidden !important;
+}
+/* === Selected Work: clamp listing thumbnails === */
+/* If Quarto uses a background-based thumbnail with inline padding-bottom */
+section.quarto-listing-container .thumbnail-image {
+  padding-bottom: 0 !important;       /* kill the aspect-ratio hack */
+  height: 140px !important;           /* set your height */
+  max-height: 140px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  overflow: hidden !important;
+}
+
+/* If Quarto renders an actual <img> inside the listing */
+section.quarto-listing-container .thumbnail-image img,
+section.quarto-listing-container .listing-image img,
+section.quarto-listing-container .quarto-grid .card .card-img-top {
+  height: 140px !important;
+  max-height: 140px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  overflow: hidden !important;
+}
+
+/* Optional: if you prefer a fixed-cropped banner instead of max-width */
+.project-card--banner img {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Grid stays as-is; we just add a thumbnail frame */
+.project-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;          /* keep all thumbs identical shape */
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f6f7f9;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;              /* fills frame, crops if needed */
+  display: block;
+}
+
+/* --- Selected Work fixes --- */
+.projects-grid .project-thumb { 
+  display: block;                 /* make the aspect-ratio box apply */
+}
+
+.projects-grid .project-thumb img {
+  max-width: none !important;     /* override the 200px cap */
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block;
+}
+
+/* Force 1/2/3 columns by breakpoint */
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;                    /* mobile default */
+}
+
+@media (min-width: 680px) {                      /* tablet */
+  .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1080px) {                     /* desktop */
+  .projects-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* Make sure cards don't impose their own width */
+.project-card { width: 100%; box-sizing: border-box; }
