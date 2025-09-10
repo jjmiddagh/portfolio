@@ -6,8 +6,8 @@ from playwright.async_api import async_playwright
 # Use localhost while generating, then switch to prod later if needed.
 PROJECTS = [
     #("fraud-risk-simulation", "http://localhost:8501"),
-    ("churn-prediction", "http://localhost:8502"),
-    # ("airbnb-pricing", "http://localhost:8503"),
+    #("churn-prediction", "http://localhost:8502"),
+    ("smart-router", "http://localhost:8504"),
 ]
 
 OUT_DIR = "assets/images/thumbnails"
