@@ -5,9 +5,12 @@ listing:
   sort: \"priority\"
   fields: [title, image, description, categories]
   type: grid
-  image-placeholder: true
-  filter:
-    - featured: true
+  image-placeholder: "true"
+  include:
+    featured: true     # show only items with featured: true
+  # optional UI controls
+  sort-ui: false
+  filter-ui: false
 ---
 
 Welcome! I build practical AI systems and model-risk programs. Below are a few highlights.
