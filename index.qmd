@@ -115,7 +115,7 @@ animateStat('cert-stat', 3, 800);
 
   <!-- Fraud Risk Simulation -->
   <div class="project-card">
-    <a href="/projects/fraud-risk-simulation.html" class="project-thumb" aria-label="Fraud Risk Simulation">
+    <a href="https://jjmiddagh-fraud-risk-simulation-appapp-do3dgx.streamlit.app/" class="project-thumb" aria-label="Fraud Risk Simulation">
       <img src="assets/images/thumbnails/fraud-risk-simulation.png"
            alt="Fraud Risk Simulation – Streamlit app thumbnail"
            loading="lazy">
@@ -124,13 +124,13 @@ animateStat('cert-stat', 3, 800);
     <p>Monte Carlo engine for model risk limits with fast scenario sampling and automated sensitivity reports.</p>
     <div class="card-ctas">
       <a href="https://github.com/jjmiddagh/fraud-risk-simulation" class="card-cta">View repo →</a>
-      <a href="/projects/fraud-risk-simulation.html" class="card-cta secondary">Case study →</a>
+      <a href="https://jjmiddagh-fraud-risk-simulation-appapp-do3dgx.streamlit.app/" class="card-cta secondary" target="_blank" rel="noopener noreferrer">Demo →</a>
     </div>
   </div>
 
   <!-- Customer Churn Prediction -->
   <div class="project-card">
-    <a href="/portfolio/projects/churn-prediction.html" class="project-thumb" aria-label="Customer Churn Prediction">
+    <a href="https://jjmiddagh-customer-churn-appapp-iksov2.streamlit.app/" class="project-thumb" aria-label="Customer Churn Prediction">
       <img src="assets/images/thumbnails/churn-prediction.png"
           alt="Customer Churn – Streamlit overview thumbnail" loading="lazy">
     </a>
@@ -138,13 +138,13 @@ animateStat('cert-stat', 3, 800);
     <p>End-to-end ML pipeline with feature engineering, class balancing, and deployment-ready models.</p>
     <div class="card-ctas">
       <a href="https://github.com/jjmiddagh/customer_churn" class="card-cta">View repo →</a>
-      <a href="/portfolio/projects/churn-prediction.html" class="card-cta secondary">Case study →</a>
+      <a href="https://jjmiddagh-customer-churn-appapp-iksov2.streamlit.app/" class="card-cta secondary" target="_blank" rel="noopener noreferrer">Demo →</a>
     </div>
   </div>
 
   <!-- Cost/Latency Smart Router (FrugalGPT-style) -->
   <div class="project-card">
-    <a href="/projects/smart-router.html" class="project-thumb" aria-label="Cost/Latency Smart Router">
+    <a href="https://jjmiddagh-smart-router-appapp-ottasd.streamlit.app/" class="project-thumb" aria-label="Cost/Latency Smart Router">
       <img
         src="assets/images/thumbnails/smart-router.png"
         alt="Cost/Latency Smart Router thumbnail"
@@ -156,7 +156,7 @@ animateStat('cert-stat', 3, 800);
 
     <div class="card-ctas">
       <a href="https://github.com/jjmiddagh/smart-router" class="card-cta">View repo →</a>
-      <a href="/projects/smart-router.html" class="card-cta secondary">Case study →</a>
+      <a href="https://jjmiddagh-smart-router-appapp-ottasd.streamlit.app/" class="card-cta secondary" target="_blank" rel="noopener noreferrer">Demo →</a>
     </div>
   </div>
 
