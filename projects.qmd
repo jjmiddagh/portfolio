@@ -1,16 +1,46 @@
-﻿# Projects
+﻿
+# Projects
+```{=html}
+<div class="project-grid">
 
-::: {layout-ncol=3}
-- ### Telecom Churn Prediction  
-  - XGBoost, SMOTE, Streamlit  
-  - [Repo](https://github.com/jjmiddagh/telecom-churn) · [Demo](/projects/churn.html)
+  <!-- Fraud Risk Simulation -->
+  <div class="project-card">
+    <a href="https://jjmiddagh-fraud-risk-simulation-appapp-do3dgx.streamlit.app/" class="project-thumb" aria-label="Fraud Risk Simulation" target="_blank" rel="noopener noreferrer">
+      <img src="assets/images/thumbnails/fraud-risk-simulation.png" alt="Fraud Risk Simulation thumbnail" loading="lazy">
+    </a>
+    <h3>Fraud Risk Simulation</h3>
+    <p>Monte Carlo engine for model risk limits with fast scenario sampling and automated sensitivity reports.</p>
+    <div class="card-ctas">
+      <a href="https://github.com/jjmiddagh/fraud-risk-simulation" class="card-cta">View repo →</a>
+      <a href="https://jjmiddagh-fraud-risk-simulation-appapp-do3dgx.streamlit.app/" class="card-cta secondary" target="_blank" rel="noopener noreferrer">Demo →</a>
+    </div>
+  </div>
 
-- ### AI Bias Auditing for HR  
-  - Fairness metrics, drift monitoring  
-  - [Case Study](/projects/hr-bias.html)
+  <!-- Customer Churn Prediction -->
+  <div class="project-card">
+    <a href="https://jjmiddagh-customer-churn-appapp-iksov2.streamlit.app/" class="project-thumb" aria-label="Customer Churn Prediction" target="_blank" rel="noopener noreferrer">
+      <img src="assets/images/thumbnails/churn-prediction.png" alt="Customer Churn Prediction thumbnail" loading="lazy">
+    </a>
+    <h3>Customer Churn Prediction</h3>
+    <p>End-to-end ML pipeline with feature engineering, class balancing, and deployment-ready models.</p>
+    <div class="card-ctas">
+      <a href="https://github.com/jjmiddagh/customer_churn" class="card-cta">View repo →</a>
+      <a href="https://jjmiddagh-customer-churn-appapp-iksov2.streamlit.app/" class="card-cta secondary" target="_blank" rel="noopener noreferrer">Demo →</a>
+    </div>
+  </div>
 
-- ### Airbnb Dynamic Pricing (Flagstaff)
-  - Price elasticity, scraping pipeline  
-  - [Overview](/projects/airbnb-pricing.html)
-:::
+  <!-- Cost/Latency Smart Router -->
+  <div class="project-card">
+    <a href="http://localhost:8504" class="project-thumb" aria-label="Cost/Latency Smart Router" target="_blank" rel="noopener noreferrer">
+      <img src="assets/images/thumbnails/smart-router.png" alt="Cost/Latency Smart Router thumbnail" loading="lazy">
+    </a>
+    <h3>Cost/Latency Smart Router</h3>
+    <p>FrugalGPT-style cascade that routes easy queries to cheap models and escalates only when needed.</p>
+    <div class="card-ctas">
+      <a href="https://github.com/jjmiddagh/smart-router" class="card-cta">View repo →</a>
+      <a href="http://localhost:8504" class="card-cta secondary" target="_blank" rel="noopener noreferrer">Demo →</a>
+    </div>
+  </div>
 
+</div>
+```
