@@ -31,14 +31,14 @@
 
   <!-- Cost/Latency Smart Router -->
   <div class="project-card">
-    <a href="http://localhost:8504" class="project-thumb" aria-label="Cost/Latency Smart Router" target="_blank" rel="noopener noreferrer">
+    <a href="https://jjmiddagh-smart-router-appapp-ottasd.streamlit.app/" class="project-thumb" aria-label="Cost/Latency Smart Router" target="_blank" rel="noopener noreferrer">
       <img src="assets/images/thumbnails/smart-router.png" alt="Cost/Latency Smart Router thumbnail" loading="lazy">
     </a>
     <h3>Cost/Latency Smart Router</h3>
     <p>FrugalGPT-style cascade that routes easy queries to cheap models and escalates only when needed.</p>
     <div class="card-ctas">
       <a href="https://github.com/jjmiddagh/smart-router" class="card-cta">View repo →</a>
-      <a href="http://localhost:8504" class="card-cta secondary" target="_blank" rel="noopener noreferrer">Demo →</a>
+      <a href="https://jjmiddagh-smart-router-appapp-ottasd.streamlit.app/" class="card-cta secondary" target="_blank" rel="noopener noreferrer">Demo →</a>
     </div>
   </div>
 
