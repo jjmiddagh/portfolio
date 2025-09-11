@@ -1,6 +1,8 @@
 ﻿project:
   type: website
   output-dir: _site
+  pre-render: 
+    - "python build_resume.py"
 
 website:
   title: \"Joshua J. Middagh” Portfolio\"
@@ -15,6 +17,8 @@ website:
         text: About
       - href: files/Joshua_Middagh_Resume.pdf
         text: Resume
+      - text: Resume
+        href: resume.qmd
   page-footer:
     center: \"Â© {{< year >}} Joshua J. Middagh\"
   favicon: assets/images/favicon.png

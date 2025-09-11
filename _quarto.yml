@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  pre-render:
+    - "python tools/build_resume.py"
 metadata:
   lang: en
   encoding: utf-8
@@ -18,6 +20,7 @@ website:
         text: About
       - href: resume.qmd
         text: Resume
+        
   page-footer:
     center: "© 2025 Joshua J. Middagh"
   favicon: assets/images/favicon.png
