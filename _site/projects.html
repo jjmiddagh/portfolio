@@ -129,31 +129,47 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="projects" class="level1">
 <h1>Projects</h1>
-<div class="quarto-layout-panel" data-layout-ncol="3">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<ul>
-<li><h3 id="telecom-churn-prediction" data-anchor-id="projects">Telecom Churn Prediction</h3>
-<ul>
-<li>XGBoost, SMOTE, Streamlit<br>
-</li>
-<li><a href="https://github.com/jjmiddagh/telecom-churn">Repo</a> · <a href=".\projects/churn.html">Demo</a></li>
-</ul></li>
-<li><h3 id="ai-bias-auditing-for-hr">AI Bias Auditing for HR</h3>
-<ul>
-<li>Fairness metrics, drift monitoring<br>
-</li>
-<li><a href=".\projects/hr-bias.html">Case Study</a></li>
-</ul></li>
-<li><h3 id="airbnb-dynamic-pricing-flagstaff">Airbnb Dynamic Pricing (Flagstaff)</h3>
-<ul>
-<li>Price elasticity, scraping pipeline<br>
-</li>
-<li><a href=".\projects/airbnb-pricing.html">Overview</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
+<div class="project-grid">
+
+  <!-- Fraud Risk Simulation -->
+  <div class="project-card">
+    <a href="https://jjmiddagh-fraud-risk-simulation-appapp-do3dgx.streamlit.app/" class="project-thumb" aria-label="Fraud Risk Simulation" target="_blank" rel="noopener noreferrer">
+      <img src="assets/images/thumbnails/fraud-risk-simulation.png" alt="Fraud Risk Simulation thumbnail" loading="lazy">
+    </a>
+    <h3 data-anchor-id="projects">Fraud Risk Simulation</h3>
+    <p>Monte Carlo engine for model risk limits with fast scenario sampling and automated sensitivity reports.</p>
+    <div class="card-ctas">
+      <a href="https://github.com/jjmiddagh/fraud-risk-simulation" class="card-cta">View repo →</a>
+      <a href="https://jjmiddagh-fraud-risk-simulation-appapp-do3dgx.streamlit.app/" class="card-cta secondary" target="_blank" rel="noopener noreferrer">Demo →</a>
+    </div>
+  </div>
+
+  <!-- Customer Churn Prediction -->
+  <div class="project-card">
+    <a href="https://jjmiddagh-customer-churn-appapp-iksov2.streamlit.app/" class="project-thumb" aria-label="Customer Churn Prediction" target="_blank" rel="noopener noreferrer">
+      <img src="assets/images/thumbnails/churn-prediction.png" alt="Customer Churn Prediction thumbnail" loading="lazy">
+    </a>
+    <h3>Customer Churn Prediction</h3>
+    <p>End-to-end ML pipeline with feature engineering, class balancing, and deployment-ready models.</p>
+    <div class="card-ctas">
+      <a href="https://github.com/jjmiddagh/customer_churn" class="card-cta">View repo →</a>
+      <a href="https://jjmiddagh-customer-churn-appapp-iksov2.streamlit.app/" class="card-cta secondary" target="_blank" rel="noopener noreferrer">Demo →</a>
+    </div>
+  </div>
+
+  <!-- Cost/Latency Smart Router -->
+  <div class="project-card">
+    <a href="https://jjmiddagh-smart-router-appapp-ottasd.streamlit.app/" class="project-thumb" aria-label="Cost/Latency Smart Router" target="_blank" rel="noopener noreferrer">
+      <img src="assets/images/thumbnails/smart-router.png" alt="Cost/Latency Smart Router thumbnail" loading="lazy">
+    </a>
+    <h3>Cost/Latency Smart Router</h3>
+    <p>FrugalGPT-style cascade that routes easy queries to cheap models and escalates only when needed.</p>
+    <div class="card-ctas">
+      <a href="https://github.com/jjmiddagh/smart-router" class="card-cta">View repo →</a>
+      <a href="https://jjmiddagh-smart-router-appapp-ottasd.streamlit.app/" class="card-cta secondary" target="_blank" rel="noopener noreferrer">Demo →</a>
+    </div>
+  </div>
+
 </div>
 
 
