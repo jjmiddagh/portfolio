@@ -1,6 +1,16 @@
 ﻿---
 title: "About Me"
 ---
-
-# About Me
-I’m a value-driven, technology-oriented servant leader who turns ambiguous problems into measurable outcomes. I build inclusive, high-trust data science teams that ship: from whiteboard to production with solid MLOps, experimentation, and model-risk controls. My focus is business impact—improving retention, pricing, fraud/risk, and customer experience—while keeping systems safe, observable, and cost-aware (think evals, guardrails, and smart routing for LLMs). I partner tightly with Product, Engineering, Finance, and Risk to prioritize a portfolio that balances ROI, speed, and governance, and I translate model evidence into decisions executives can act on. I set clear strategy, unblock the work, coach ICs into leaders, and foster a culture that values curiosity, accountability, and results. In short: I speak both the language of the boardroom and the notebook, and I’m here to help teams deliver trustworthy AI that moves the business.
+I’m a value-driven, technology-oriented servant leader who turns ambiguous problems 
+into measurable outcomes. I build inclusive, high-trust data science teams that 
+ship: from whiteboard to production with solid MLOps, experimentation, and 
+model-risk controls. My focus is business impact—improving retention, pricing, 
+fraud/risk, and customer experience—while keeping systems safe, observable, and 
+cost-aware (think evals, guardrails, and smart routing for LLMs). I partner 
+tightly with Product, Engineering, Finance, and Risk to prioritize a portfolio 
+that balances ROI, speed, and governance, and I translate model evidence into 
+decisions executives can act on. I set clear strategy, unblock the work, coach 
+ICs into leaders, and foster a culture that values curiosity, accountability, 
+and results. In short: I speak both the language of the boardroom and the 
+notebook, and I’m here to help teams deliver trustworthy AI that moves the 
+business.
