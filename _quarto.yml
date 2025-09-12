@@ -23,7 +23,7 @@ website:
         
   page-footer:
     center: "© 2025 Joshua J. Middagh"
-  favicon: assets/images/favicon.png
+  favicon: assets/images/favicon-jjm-rounded.png
 
 format:
   html:

@@ -238,3 +238,28 @@ section.quarto-listing-container .quarto-grid .card .card-img-top {
 .project-card { width: 100%; box-sizing: border-box; }
 
 .selected-work { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+/* ===== Mobile stacking for hero ===== */
+@media (max-width: 820px){
+  /* Stack the two columns vertically on phones */
+  .hero-row{
+    display: flex !important;           /* override inline display if needed */
+    flex-direction: column !important;  /* stack */
+    align-items: center !important;
+    gap: 1rem !important;
+  }
+  /* Make both columns full width when stacked */
+  .hero-left,
+  .hero-right{
+    flex: 0 0 auto !important;
+    width: 100% !important;
+  }
+  /* Nudge the right block (text) down a bit for breathing room */
+  .hero-right{
+    margin-top: .5rem !important;
+  }
+  /* Optional: avoid awkward justified text on narrow screens */
+  .hero-right p{
+    text-align: left !important;
+  }
+}
